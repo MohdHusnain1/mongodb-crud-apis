@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRUD App with Mock API</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>World Presidents using CRUD Operations</h1>
+
+    <!-- Form for Create and Update -->
+    <form id="assignmentForm">
+        <input type="hidden" id="assignmentId" />
+        <input type="text" id="assignmentTitle" placeholder="Title" required />
+        <input type="text" id="assignmentDescription" placeholder="Description" required />
+        <button type="submit" id="submitButton">Add President</button>
+    </form>
+
+    <!-- Table for Displaying Data -->
+    <table id="assignmentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="assignmentList"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
